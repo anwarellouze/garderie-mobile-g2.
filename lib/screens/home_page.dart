@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.deepOrange),
+              decoration: BoxDecoration(color: Colors.orange),
               child: Align(
                 alignment: Alignment.bottomLeft,
                 child: Text(
@@ -111,7 +111,6 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        tooltip: 'Ajouter un menu',
         onPressed: () => _showMessage('Ajouter un menu'),
         child: const Icon(Icons.add),
       ),
@@ -133,11 +132,7 @@ class _HomePageState extends State<HomePage> {
               itemBuilder: (context, index) {
                 final menu = menusData[index];
                 return Card(
-                  key: ValueKey(menu['id']),
                   margin: const EdgeInsets.only(bottom: 12),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
                   child: ListTile(
                     contentPadding: const EdgeInsets.symmetric(
                       horizontal: 16,
