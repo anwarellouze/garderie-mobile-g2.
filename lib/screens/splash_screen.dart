@@ -51,6 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   borderRadius: BorderRadius.circular(24),
                   child: Image.asset(
                     'assets/images/garderie.png',
+                    semanticLabel: 'Illustration d’une garderie avec des enfants',
                     width: 280,
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) =>
