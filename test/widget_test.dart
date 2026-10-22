@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ma_garderie/main.dart';
 
@@ -53,7 +54,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Aucune notification'), findsOneWidget);
 
-    await tester.tap(find.byTooltip('Ajouter un menu'));
+    await tester.tap(find.byIcon(Icons.add));
     await tester.pumpAndSettle();
     expect(find.text('Ajouter un menu'), findsOneWidget);
 
