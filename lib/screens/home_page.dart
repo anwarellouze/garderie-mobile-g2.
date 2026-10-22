@@ -18,10 +18,7 @@ class _HomePageState extends State<HomePage> {
     final messenger = ScaffoldMessenger.of(context);
     messenger.hideCurrentSnackBar();
     messenger.showSnackBar(
-      SnackBar(
-        content: Text(message),
-        duration: const Duration(seconds: 2),
-      ),
+      SnackBar(content: Text(message), duration: const Duration(seconds: 2)),
     );
   }
 
@@ -114,6 +111,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        tooltip: 'Ajouter un menu',
         onPressed: () => _showMessage('Ajouter un menu'),
         child: const Icon(Icons.add),
       ),
@@ -124,9 +122,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(16),
             child: Text(
               'Menus du jour',
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineSmall
+              style: Theme.of(context).textTheme.headlineSmall
                   ?.copyWith(fontWeight: FontWeight.bold),
             ),
           ),
