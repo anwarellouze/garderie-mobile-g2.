@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.orange),
+              decoration: BoxDecoration(color: Colors.deepOrange),
               child: Align(
                 alignment: Alignment.bottomLeft,
                 child: Text(
@@ -138,6 +138,9 @@ class _HomePageState extends State<HomePage> {
                 final menu = menusData[index];
                 return Card(
                   margin: const EdgeInsets.only(bottom: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: ListTile(
                     contentPadding: const EdgeInsets.symmetric(
                       horizontal: 16,
