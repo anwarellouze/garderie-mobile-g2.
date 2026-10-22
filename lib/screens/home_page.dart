@@ -137,6 +137,7 @@ class _HomePageState extends State<HomePage> {
               itemBuilder: (context, index) {
                 final menu = menusData[index];
                 return Card(
+                  key: ValueKey(menu['id']),
                   margin: const EdgeInsets.only(bottom: 12),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
